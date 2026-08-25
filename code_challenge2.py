@@ -1,30 +1,30 @@
 money = 2304
 
 danilo = money // 1000
-remaining = money % 1000
+balisi = money % 1000
 
-angelica = remaining // 500
-remaining = remaining % 500
+angelica = balisi // 500
+balubal = balisi % 500
 
-dianne = remaining // 200
-remaining = remaining % 200
+dianne = balubal // 200
+tuna = balubal % 200
 
-annalyn = remaining // 100
-remaining = remaining % 100
+annalyn = tuna // 100
+pangga = tuna % 100
 
-david = remaining // 50
-remaining = remaining % 50
+david = pangga // 50
+anthony = pangga % 50
 
-justine = remaining // 20
-remaining = remaining % 20
+justine = anthony // 20
+mark = anthony % 20
 
-nita = remaining // 10
-remaining = remaining % 10
+nita = mark // 10
+nitullano = mark % 10
 
-mae = remaining // 5
-remaining = remaining % 5
+mae = nitullano // 5
+kristine = nitullano % 5
 
-jhoree = remaining // 1
+jhoree = kristine // 1
 
 print("The money deposited is", money)
 print("1000 =", danilo)
