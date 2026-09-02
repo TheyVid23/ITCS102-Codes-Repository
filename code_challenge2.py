@@ -1,4 +1,4 @@
-money = int(input("Enter money deposited"))
+money = int(input("Enter money deposited:"))
 
 danilo = money // 1000
 balisi = money % 1000
