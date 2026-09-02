@@ -1,4 +1,4 @@
-money = 2304
+money = int(input("Enter money deposited"))
 
 danilo = money // 1000
 balisi = money % 1000
@@ -26,6 +26,7 @@ kristine = nitullano % 5
 
 jhoree = kristine // 1
 
+print("===============================================")
 print("The money deposited is", money)
 print("1000 =", danilo)
 print("500 =", angelica)
@@ -36,6 +37,6 @@ print("20 =", justine)
 print("10 =", nita)
 print("5 =", mae)
 print("1 =", jhoree)
-
+print("===============================================")
 
 
