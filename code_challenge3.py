@@ -15,7 +15,7 @@ is_International = input('Is it from another country? (yes/no) --> ')
 
 base_cost = (Weight * 2.5) + (Distance * 0.15)
 
-if Distance <= 100 and Weight <= 2:
+if Distance <= 100 and Weight <= 2 and not is_Express and not is_International:
     Total = 0
 
 elif is_International == 'yes' and is_Express == 'yes':
