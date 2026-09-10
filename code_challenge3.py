@@ -1,54 +1,50 @@
+
 SenderName = input('What is your name? --> ')
 
 TypeOfItem = input('What is your order? --> ')
 
-is_Fragile = bool(input('Is it fragile? --> '))
+is_Fragile = input('Is it fragile? (yes/no) --> ')
 
-#if is_Fragile == True:
-	print('It is')
-#else:
-	print('It is not')
+Weight = float(input('How heavy is it in kg? --> '))
 
-Weight = float(input('How heavy is it? --> ')) 
+Distance = float(input('How far is it from the designated destination in km? --> '))
 
-Distance = float(input('How far is it from the designated destination? --> '))
+is_Express = input('Is it in a hurry? (yes/no) --> ')
 
-is_Express = bool(input('Is it in a hurry? --> '))
+is_International = input('Is it from another country? (yes/no) --> ')
 
-#if is_Express == True:
-	print('It is')
-#else:
-	print('It is not')
+base_cost = (Weight * 2.5) + (Distance * 0.15)
 
-is_International = bool(input('Is it in from another country? --> '))
+if Distance <= 100 and Weight <= 2:
+    Total = 0
 
-#if is_International == True:
-	print('It is')
-#else:
-	print('It is not')
+elif is_International == 'yes' and is_Express == 'yes':
+    Total = (base_cost * 1.4) + 50
 
-base_cost = (weight * 2.5) + (distance * 0.15)
+elif Weight >= 20 and is_International == 'yes':
+    Total = (base_cost * 1.2) + 25
 
-InternationalExpress == Total1
-	Total1 = (base_cost * 1.4) + 50
+elif Distance >= 1000:
+    Total = base_cost + 30
 
-HeavyInternational == Total2 
-	Total2 = (base_cost * 1.2) + 25
+else:
+    Total = base_cost
 
-Oversized == Total3
-	Total3 = base_cost + 30
+shippingfee = Total - base_cost
 
-StandardRate == Total4
-	Total4 = base_cost
 
-Price = Total
-ALL = Distance + Weight
-INTERNEX = 
-if ALL == Weight <= 2 and Distance <= 100:
-	print('Free Shipping')
-
-if Total == 
-
+print()
+print("DAVID'S EXPRESS")
+print('Sender:', SenderName)
+print('Order:', TypeOfItem)
+print('Fragile:', is_Fragile)
+print('Weight:', Weight, 'kg')
+print('Distance:', Distance, 'km')
+print('Express:', is_Express)
+print('International:', is_International)
+print('Base Cost: PHP', base_cost)
+print('Shipping Fee: PHP', shippingfee)
+print('Total: PHP', Total)
 
 
 
