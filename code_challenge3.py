@@ -21,7 +21,7 @@ if Distance <= 100 and Weight <= 2:
 elif is_International == 'yes' and is_Express == 'yes':
     Total = (base_cost * 1.4) + 50
 
-elif Weight >= 20 and is_International == 'yes':
+elif Weight >= 20 and is_International == 'yes' or is_Express == 'yes':
     Total = (base_cost * 1.2) + 25
 
 elif Distance >= 1000:
